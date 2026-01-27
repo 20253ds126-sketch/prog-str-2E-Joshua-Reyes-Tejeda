@@ -71,6 +71,9 @@ public class Main {
         scanner.close();
     }
 
+    /**
+     * Muestra en pantalla el menu principal de conversiones.
+     */
     public static void mostrarMenu() {
 
         System.out.println("MENU DE CONVERSIONES");
@@ -81,6 +84,12 @@ public class Main {
         System.out.println("5) Salir");
     }
 
+    /**
+     * Solicita al usuario una opcion del menú y lo valida
+     *
+     * @param scanner objeto Scanner para leer datos del teclado
+     * @return opcion valida elegida por el usuario
+     */
     public static int obtenerOpcionValida(Scanner scanner) {
 
         int opcion;
@@ -106,6 +115,13 @@ public class Main {
         }
     }
 
+    /**
+     * Solicita al usuario un valor numerico (double) y lo valida
+     *
+     * @param scanner objeto Scanner para leer datos del teclado
+     * @param mensaje texto que se muestra al usuario al pedir el dato
+     * @return valor numerico ingresado
+     */
     public static double obtenerNumero(Scanner scanner, String mensaje) {
 
         double valor;
